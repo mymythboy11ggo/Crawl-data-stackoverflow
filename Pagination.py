@@ -5,9 +5,9 @@ import random
 import pymysql
 import re
 conn = pymysql.connect(host='127.0.0.1', unix_socket='/var/run/mysqld/mysqld.sock',
-                        user='root', passwd='danang', db='scraping', charset='utf8')
+                        user='root', passwd='0987410640', db='sof_question', charset='utf8')
 cur = conn.cursor()
-cur.execute("USE scraping")
+cur.execute("USE sof_question")
 random.seed(datetime.datetime.now())
 def query(pageNumber, pageSize):
         firstRecord = (pageNumber -1)* pageSize
