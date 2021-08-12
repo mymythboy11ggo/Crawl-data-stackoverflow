@@ -4,6 +4,7 @@ import datetime
 import random
 import pymysql
 import re
+import sys
 conn = pymysql.connect(host='127.0.0.1', unix_socket='/var/run/mysqld/mysqld.sock',
                         user='root', passwd='0987410640', db='sof_question', charset='utf8')
 cur = conn.cursor()
